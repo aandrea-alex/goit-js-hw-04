@@ -1,12 +1,10 @@
 // Task 3. Player profile 
+// Об’єкт profile описує профіль користувача.
+// Властивості зберігають ім’я профілю username та кількість
+// активних годин playTime, проведених у грі.
+
 
 'use strict';
-
-function filterArray(numbers, value) {
-  const filteredArray = [];
-
-  return filteredArray;
-}
 
 const profile = {
   username: "Jacob",
@@ -16,7 +14,7 @@ const profile = {
     this.username = newName;
   },
   updatePlayTime(hours) {
-    this.playTime = hours;
+    this.playTime += hours;
   },
 
   getInfo() {
